@@ -7,6 +7,8 @@
 >JavaScript doing everything save as a object
 
 ## Global execution context
+
+### javascript
 ```js
 function arrayMultiplyByTwo(arr){
     const output = [];
@@ -27,3 +29,18 @@ console.log(result)
 ||output:6|
 
 
+---
+## Arrow fucntion
+>arrow function in javascript use for the arrow function syntex is '=>' 
+>if only one perameter in the function so without we can write perameter without peranthises and return without use return keyword and karlibrases
+
+### javascript 
+```js
+function multiplyByTwo1(input){ return input*2 };
+
+const multiplyByTwo2 = (input) => { input*2 };
+
+const multiplyByTwo3 = (input) => input*2;
+
+const multiplyByTwo4 = input => input*2
+```
