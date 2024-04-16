@@ -32,7 +32,7 @@ console.log(result)
 ---
 ## Arrow fucntion
 >arrow function in javascript use for the arrow function syntex is '=>' 
->if only one perameter in the function so without we can write perameter without peranthises and return without use return keyword and karlibrases
+>if only one perameter in the function so we can write perameter without peranthises and return without use return keyword and karlibrases
 
 ### javascript 
 ```js
@@ -44,3 +44,23 @@ const multiplyByTwo3 = (input) => input*2;
 
 const multiplyByTwo4 = input => input*2
 ```
+
+## Closure
+>when we create a function in our programm and run it so that it run each time from skrech it can,t remember our first and second and further operation,s the closure is the solution of this problem
+```js
+function multiplyByTwo(){
+    function innerFn(num){
+        return num*2
+    }
+    return innerFn
+}
+
+const generator = multiplyByTwo()
+const result = generator(5) // 10 
+
+console.log(result)
+```
+
+## Function with memory
+>when we get or call a function so create a local memory for execution to function this local memory create in our global memory
+>when the function is finish and return value then this local memory is delete
