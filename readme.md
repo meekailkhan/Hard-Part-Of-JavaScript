@@ -64,3 +64,4 @@ console.log(result)
 ## Function with memory
 >when we get or call a function so create a local memory for execution to function this local memory create in our global memory
 >when the function is finish and return value then this local memory is delete
+>But our function hold data when the global execution is not our in this situation our memory not start to screth
