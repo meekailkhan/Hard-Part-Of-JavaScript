@@ -82,3 +82,26 @@ console.log(myNewFunction())
 
 >when the mainFuntion return innerFuntion into a global execution context so innerFuntion take all variable and value of mainFunction just becuase if the operation is relate to variable who define in a mainFunction if innerFunction not take a value and variable show result of operation undefined and maybe error
 >So innerFunction return with the surounding value and variable
+
+## Scope in JavaScript
+>In the scope is decide which variable whether access 
+>JavaScript have generaly 2 scope 
+* Global Scope
+* Local Scope
+
+#### Global Scope
+>Variable who declare in global scope we can access wherever in the part of programm the global variable store in window object we found it in
+```js
+var a = "one";
+
+
+console.log(a) // one
+
+console.log(window.a) // one
+
+
+{
+    console.log(a); // one
+    console.log(window.a) // one
+}
+```
