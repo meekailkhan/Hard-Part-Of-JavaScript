@@ -32,3 +32,5 @@ arr.forEach(eachStudent => {
     studentInstances.push(currentInstance);
 });
 console.log(studentInstances);
+
+    
