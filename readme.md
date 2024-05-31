@@ -103,3 +103,5 @@ console.log(window.a) // one
     console.log(window.a) // one
 }
 ```
+#### Local Scope
+>Variable who declare in block scope block create by karlibraces "{}" and they exis in only his block not whole programm and file
