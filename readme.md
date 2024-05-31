@@ -105,3 +105,28 @@ console.log(window.a) // one
 ```
 #### Local Scope
 >Variable who declare in block scope block create by karlibraces "{}" and they exis in only his block not whole programm and file
+
+
+## Prototype Chain
+>when we try to access any key in the javascript object who never exit in object javascript start searching this key in their prototype of object and start operation on the basis of prototype we can coustomize of any object prototype with the help of Object.create() method
+```js
+// 
+function userCreator(name,score){
+    const newUser = Object.create(userFunctionStore)
+    newUser.name = name;
+    newUser.score = score;
+
+    return newUser
+}
+
+let userFunctionStore = {
+    increament : function(){
+        this.score++
+    },
+}
+
+let user1 = userCreator("meekail",5)
+console.log(user1.score); // 
+user1.increament();
+console.log(user1.score)
+```
