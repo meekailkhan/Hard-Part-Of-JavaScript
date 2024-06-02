@@ -126,7 +126,7 @@ let userFunctionStore = {
 }
 
 let user1 = userCreator("meekail",5)
-console.log(user1.score); // 
+console.log(user1.score); // 5
 user1.increament();
-console.log(user1.score)
+console.log(user1.score)  // 6
 ```
