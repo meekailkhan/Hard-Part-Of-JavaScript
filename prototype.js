@@ -18,3 +18,12 @@ console.log(user1.score); // 5
 user1.increament();
 console.log(user1.score)  // 6
 
+console.log(user1.hasOwnProperty("name")) // true
+let prototype1 = {}
+let obj1 = Object.create(prototype1)
+console.log(Object.getPrototypeOf(obj) === prototype1) // true
+console.log(window.Object.create)
+
+window.str = "hello world";
+let obj = Object.create(window);
+console.log(obj.str)
