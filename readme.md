@@ -130,3 +130,14 @@ console.log(user1.score); // 5
 user1.increament();
 console.log(user1.score)  // 6
 ```
+## Function Object
+>JavaScript hava more flexiblity with function is not only function but object empty object and in the javascript we can add key value pair and use of them
+```js
+function multiplyByTwo(num){
+    return num * 2
+}
+
+multiplyByTwo.scored = multiplyByTwo(5)
+console.log(multiplyByTwo.scored) // 10
+console.log(multiplyByTwo.prototype) // {}
+```

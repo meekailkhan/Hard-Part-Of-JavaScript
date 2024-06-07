@@ -45,11 +45,17 @@ class Student{
     info(){
         return `hey this student name is ${this.name} achive marks by this student is ${this.marks} this student in the ${this.standard}`
     }
+    achivedMarks(){
+        return `achive marks by this student is ${this.marks}`
+    }
+    sayName(){
+        return `name of the student is ${this.name}`
+    }
     
 }
 
 let user1 = new Student("saif",18,"12th",90)
-console.log(user1.info())
+console.log(user1)
 
 
 
