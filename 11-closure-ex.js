@@ -4,13 +4,24 @@
 // un-comment out those
 // lines in the code and run it to see if it works.
 
-function createFunction() {
-    function innerFunction(){
-      return "hello"
-    }
-    return innerFunction;
+// function createFunction() {
+//     function innerFunction(){
+//       return "hello"
+//     }
+//     return innerFunction;
+// }
+
+
+// const function1 = createFunction();
+// console.log(function1()); // => should console.log('hello');
+
+function fn(){
+  let n = 3;
+  function innerFn(num){
+    return num * n
+  }
+  return innerFn
 }
 
-
-const function1 = createFunction();
-console.log(function1()); // => should console.log('hello');
+let myFn = fn()
+console.log(myFn(2))
